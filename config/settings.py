@@ -41,7 +41,7 @@ DJANGO_APPS = [
 ]
 
 # THIRD_PARTY_APPS = ["django_countries", "django_seed", "storages"]
-THIRD_PARTY_APPS = ["django_countries",]
+THIRD_PARTY_APPS = ["django_countries", "django_seed"]
 
 PROJECT_APPS = [
     "core.apps.CoreConfig",
@@ -139,3 +139,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.User'
+
+MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_URL = "/media/"
