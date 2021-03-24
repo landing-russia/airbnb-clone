@@ -34,10 +34,7 @@ class User(AbstractUser):
     bio = models.TextField(blank=True)
     birthdate = models.DateField(blank=True, null=True)
     language = models.CharField(
-        choices=LANGUAGE_CHOICES,
-        max_length=2,
-        blank=True,
-        default=LANGUAGE_RUSSIAN,
+        choices=LANGUAGE_CHOICES, max_length=2, blank=True, default=LANGUAGE_RUSSIAN
     )
     currency = models.CharField(
         choices=CURRENCY_CHOICES, max_length=3, blank=True, default=CURRENCY_RUB
